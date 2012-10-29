@@ -100,6 +100,12 @@
 		22EE2C0A13A4731600895861 /* NuAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EE2C0913A4731600895861 /* NuAppDelegate.m */; };
 		4F43427C1420476C00AC1BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F43427B1420476C00AC1BFD /* main.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		CF13BA8F163E06FB006F30C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF13BA8E163E06FB006F30C6 /* Default-568h@2x.png */; };
+		CF13BA9D163E07FB006F30C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF13BA9C163E07FB006F30C6 /* Foundation.framework */; };
+		CF13BAA9163E0817006F30C6 /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3B41D13B0359300B3AB31 /* Nu.m */; };
+		CF13BAAB163E0817006F30C6 /* ffi.S in Sources */ = {isa = PBXBuildFile; fileRef = 225F62C413B04256002DD16B /* ffi.S */; };
+		CF13BAAC163E0817006F30C6 /* ffi.c in Sources */ = {isa = PBXBuildFile; fileRef = 225F62CA13B04256002DD16B /* ffi.c */; };
+		CF13BABC163E1F3B006F30C6 /* Nu.h in Headers */ = {isa = PBXBuildFile; fileRef = 229FABE113C0129400CEFCF5 /* Nu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +117,18 @@
 			remoteInfo = Nu;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF13BA98163E07FB006F30C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -197,6 +215,11 @@
 		4F43427B1420476C00AC1BFD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main/main.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* Nu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF13BA8C163E06D4006F30C6 /* NuApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NuApp copy-Info.plist"; path = "/Users/rexsheng/Downloads/timburks-nu-9e50f0c/Xcode/NuApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		CF13BA8E163E06FB006F30C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF13BA9A163E07FB006F30C6 /* libnu_ios_sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnu_ios_sdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF13BA9C163E07FB006F30C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF13BAA0163E07FB006F30C6 /* nu-ios-sdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nu-ios-sdk-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +248,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF13BA97163E07FB006F30C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF13BA9D163E07FB006F30C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -234,6 +265,7 @@
 				8DC2EF5B0486A6940098B216 /* Nu.framework */,
 				2283073111DDBE3100A5C690 /* nush */,
 				22EE2BF413A4731600895861 /* NuApp.app */,
+				CF13BA9A163E07FB006F30C6 /* libnu_ios_sdk.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,12 +273,16 @@
 		0867D691FE84028FC02AAC07 /* Nu */ = {
 			isa = PBXGroup;
 			children = (
+				CF13BA8E163E06FB006F30C6 /* Default-568h@2x.png */,
 				22B3B41C13B0359300B3AB31 /* objc */,
 				22B3B3E413B033EE00B3AB31 /* nu */,
 				22B3B38713B033D400B3AB31 /* test */,
 				225F62B913B04256002DD16B /* libffi */,
 				22B3B50B13B03CF400B3AB31 /* Targets */,
+				CF13BA9E163E07FB006F30C6 /* nu-ios-sdk */,
+				CF13BA9B163E07FB006F30C6 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				CF13BA8C163E06D4006F30C6 /* NuApp copy-Info.plist */,
 			);
 			name = Nu;
 			sourceTree = "<group>";
@@ -428,6 +464,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CF13BA9B163E07FB006F30C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF13BA9C163E07FB006F30C6 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF13BA9E163E07FB006F30C6 /* nu-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				CF13BA9F163E07FB006F30C6 /* Supporting Files */,
+			);
+			path = "nu-ios-sdk";
+			sourceTree = "<group>";
+		};
+		CF13BA9F163E07FB006F30C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF13BAA0163E07FB006F30C6 /* nu-ios-sdk-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -435,6 +495,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF13BABB163E1F30006F30C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF13BABC163E1F3B006F30C6 /* Nu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +562,24 @@
 			productReference = 8DC2EF5B0486A6940098B216 /* Nu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CF13BA99163E07FB006F30C6 /* nu-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF13BAA5163E07FB006F30C6 /* Build configuration list for PBXNativeTarget "nu-ios-sdk" */;
+			buildPhases = (
+				CF13BABB163E1F30006F30C6 /* Headers */,
+				CF13BA96163E07FB006F30C6 /* Sources */,
+				CF13BA97163E07FB006F30C6 /* Frameworks */,
+				CF13BA98163E07FB006F30C6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nu-ios-sdk";
+			productName = "nu-ios-sdk";
+			productReference = CF13BA9A163E07FB006F30C6 /* libnu_ios_sdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -521,6 +607,7 @@
 				8DC2EF4F0486A6940098B216 /* Nu */,
 				2283073011DDBE3100A5C690 /* nush */,
 				22EE2BF313A4731600895861 /* NuApp */,
+				CF13BA99163E07FB006F30C6 /* nu-ios-sdk */,
 			);
 		};
 /* End PBXProject section */
@@ -594,6 +681,7 @@
 				22B3B41513B033EE00B3AB31 /* template.nu in Resources */,
 				22B3B41713B033EE00B3AB31 /* test.nu in Resources */,
 				22EE1B931406F494007AFC23 /* test_forwarding.nu in Resources */,
+				CF13BA8F163E06FB006F30C6 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +738,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B3B47313B0359300B3AB31 /* Nu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF13BA96163E07FB006F30C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF13BAA9163E0817006F30C6 /* Nu.m in Sources */,
+				CF13BAAB163E0817006F30C6 /* ffi.S in Sources */,
+				CF13BAAC163E0817006F30C6 /* ffi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +851,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ledit",
 					"-lffi",
@@ -777,6 +875,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/local/include;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ledit",
 					"-lffi",
@@ -907,6 +1006,70 @@
 			};
 			name = Release;
 		};
+		CF13BAA6163E07FB006F30C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/nu_ios_sdk.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nu-ios-sdk/nu-ios-sdk-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = nu_ios_sdk;
+				PUBLIC_HEADERS_FOLDER_PATH = "nu-ios-sdk";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		CF13BAA7163E07FB006F30C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/nu_ios_sdk.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nu-ios-sdk/nu-ios-sdk-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = nu_ios_sdk;
+				PUBLIC_HEADERS_FOLDER_PATH = "nu-ios-sdk";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -945,6 +1108,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CF13BAA5163E07FB006F30C6 /* Build configuration list for PBXNativeTarget "nu-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF13BAA6163E07FB006F30C6 /* Debug */,
+				CF13BAA7163E07FB006F30C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
